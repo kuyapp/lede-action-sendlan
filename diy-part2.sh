@@ -41,8 +41,8 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 mkdir package/community
 pushd package/community
 
-# Add Lienol's Packages
-git clone --depth=1 https://github.com/Lienol/openwrt-package
+# Add luci-app-easymesh
+git clone --depth=1 https://github.com/ntlf9t/luci-app-easymesh
 
 # Add luci-app-advanced
 #git clone --depth=1 https://github.com/sirpdboy/luci-app-advanced
