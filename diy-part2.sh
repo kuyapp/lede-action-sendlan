@@ -20,10 +20,10 @@ sed -i 's/OpenWrt/ZTE-E8820S/g' package/base-files/files/bin/config_generate
 sed -i 's/OpenWrt/ZTE-E8820S/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 修改闭源驱动2G wifi名称
-sed -i 's/OpenWrt_2G/ZTE-E8820S/g' package/lean/mt/drivers/mt_wifi/files/mt7603.dat
+#sed -i 's/OpenWrt_2G/ZTE-E8820S/g' package/lean/mt/drivers/mt_wifi/files/mt7603.dat
 
 # 修改闭源驱动5G wifi名称
-sed -i 's/OpenWrt_5G/ZTE-E8820S-5G/g' package/lean/mt/drivers/mt_wifi/files/mt7612.dat
+#sed -i 's/OpenWrt_5G/ZTE-E8820S-5G/g' package/lean/mt/drivers/mt_wifi/files/mt7612.dat
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 #sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' ./package/lean/default-settings/files/zzz-default-settings
@@ -37,9 +37,9 @@ sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai
 #修正连接数
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
 
-# Clone community packages to package/community
-mkdir package/community
-pushd package/community
+# push packages to package/lean
+
+pushd package/lean
 
 # Add luci-app-easymesh
 git clone --depth=1 https://github.com/ntlf9t/luci-app-easymesh
