@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: build_hc5661_lede
+name: build_hc5761_lede
 
 on:
   repository_dispatch:
