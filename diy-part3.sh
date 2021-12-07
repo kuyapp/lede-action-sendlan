@@ -13,8 +13,8 @@
 # 修改openwrt登陆地址,把下面的192.168.2.1修改成你想要的就可以了
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
-# 修改主机名字，把HC5661修改你喜欢的就行（不能纯数字或者使用中文）
-sed -i 's/OpenWrt/HC5661/g' package/base-files/files/bin/config_generate
+# 修改主机名字，把HIWIFI修改你喜欢的就行（不能纯数字或者使用中文）
+sed -i 's/OpenWrt/HIWIFI/g' package/base-files/files/bin/config_generate
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 #sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' ./package/lean/default-settings/files/zzz-default-settings
@@ -38,7 +38,7 @@ pushd package/lean
 #git clone --depth=1 https://github.com/garypang13/luci-app-dnsfilter
 
 # Add OpenAppFilter
-#git clone --depth=1 https://github.com/destan19/OpenAppFilter
+git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
 # Add jd 
 git clone --depth=1 https://github.com/jerrykuku/luci-app-jd-dailybonus
@@ -98,14 +98,14 @@ rm -rf ../lean/luci-theme-argon
 #rm -rf ../lean/luci-theme-rosy
 
 # Add luci-theme-netgear
-#git clone --depth=1 https://github.com/i028/luci-theme-netgear
-#rm -rf ../lean/luci-theme-netgear
+git clone --depth=1 https://github.com/i028/luci-theme-netgear
+rm -rf ../lean/luci-theme-netgear
 
 # Add tmate
-git clone --depth=1 https://github.com/project-openwrt/openwrt-tmate
+#git clone --depth=1 https://github.com/project-openwrt/openwrt-tmate
 
 # Add subconverter
-git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
+#git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 # Add luci-udptools
 #git clone --depth=1 https://github.com/zcy85611/openwrt-luci-kcp-udp
@@ -114,5 +114,5 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
 #添加smartdns
-git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+#git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
