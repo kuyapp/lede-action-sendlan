@@ -172,12 +172,6 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata
 #sed -i '/mt7662u_rom_patch.bin/a\\techo mt76-usb disable_usb_sg=1 > $\(1\)\/etc\/modules.d\/mt76-usb' Makefile
 #popd
 
-# Add po2lmo
-#git clone https://github.com/openwrt-dev/po2lmo.git
-#pushd po2lmo
-#make && sudo make install
-#popd
-
 #添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
