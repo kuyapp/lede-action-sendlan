@@ -9,9 +9,6 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 
-#fix a feed source
-sed -i 's/routing.git/routing.git^a7b79a1d4fce4f443854115ee4b2ed2aafba5c06/g feeds.conf.default
-
 # Uncomment a feed source
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
