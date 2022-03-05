@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: build_jcg_q20_pb
+name: jcg_q20_pb
 
 on:
   repository_dispatch:
