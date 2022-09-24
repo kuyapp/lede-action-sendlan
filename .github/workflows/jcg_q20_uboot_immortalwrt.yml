@@ -20,10 +20,9 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/sendlan/immortalwrt
+  REPO_URL: https://github.com/kuyapp/immortalwrt
   REPO_BRANCH:  openwrt-18.06-k5.4
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/immortalwrt_q20.config
   DIY_P2_SH: script/diy-3.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
